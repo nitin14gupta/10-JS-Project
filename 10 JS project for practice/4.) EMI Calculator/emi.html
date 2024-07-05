@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./emi.css">
+    <title>BMI Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1 class="heading">Loan EMI Calculator</h1>
+            <input type="text" name="pla" id="pla" placeholder="enter Principal loan amount">
+            <br>
+            <input type="text" name="rate" id="rate" placeholder="enter the rate of interest">
+            <br>
+            <input type="text" name="year" id="year" placeholder="enter No. of year">
+            <br>
+            <input type="submit" value="Calculate" id="submit" onclick="getEmi()">
+            <div id="result">
+                <!-- Your BMI is 24 😉 -->
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- script -->
+    <script src="./emi.js"></script>
+</body>
+
+</html>

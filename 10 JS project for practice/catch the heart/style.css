@@ -1,0 +1,105 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Pacifico', cursive;
+}
+
+#game {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    max-width: 1200px;
+    max-height: 800px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#score, #timer, #text {
+    position: absolute;
+    top: 20px;
+    font-size: 2em;
+    color: #333;
+    width: 100%;
+    text-align: center;
+}
+
+#score {
+    left: 20px;
+    text-align: left;
+}
+
+#timer {
+    right: 20px;
+    text-align: right;
+}
+#text{
+    top: 60px;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.heart {
+    position: absolute;
+    font-size: 2em;
+    color: red;
+    top: -50px;
+    animation: fall 3s linear infinite;
+    transition: transform 0.2s ease-in-out;
+}
+
+.heart:hover {
+    transform: scale(1.2);
+	cursor: pointer;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+@media (max-width: 768px) {
+    #game {
+        padding: 10px;
+    }
+
+    #score, #timer, #text {
+        font-size: 1.5em;
+    }
+
+    #text {
+        top: 50px;
+    }
+
+    .heart {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    #score, #timer, #text {
+        font-size: 1em;
+    }
+
+    #text {
+        top: 40px;
+    }
+
+    .heart {
+        font-size: 1em;
+    }
+}

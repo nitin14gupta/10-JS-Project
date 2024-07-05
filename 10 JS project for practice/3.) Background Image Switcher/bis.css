@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  p {
+    color: gray;
+    font-family: cursive;
+    margin: 10px 0px;
+  }
+  
+  #switches {
+    list-style-type: none;
+    overflow: hidden;
+  }
+  
+  #switches li {
+    float: left;
+    border: 2px solid black;
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  
+  #vintage {
+    background-image: url('vintage.jpg');
+  }
+  
+  #adventures {
+    background-image: url('adventure.jpg');
+  }
+  
+  #animal {
+    background-image: url('animal.jpg');
+  }
+  
+  #romantic {
+    background-image: url('romantic.jpg');
+  }
